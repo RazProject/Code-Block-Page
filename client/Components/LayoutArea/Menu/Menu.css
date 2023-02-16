@@ -1,0 +1,34 @@
+.Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    height: 50px;
+  }
+  
+  .Menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    margin: 0 20px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .Menu a:hover {
+    color: #3caea3;
+  }
+  
+  .Menu a.active {
+    color: #4299e1;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .Menu {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .Menu a {
+      margin: 10px 0;
+    }
+  }
